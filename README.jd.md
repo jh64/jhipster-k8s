@@ -1,4 +1,7 @@
-++++
++++
+sudo apt install openjdk-8-jdk
+
++++
 host locally
 
 ./mvnw
