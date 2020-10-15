@@ -2,6 +2,7 @@
 sudo apt install openjdk-8-jdk
 
 +++
+
 host locally
 
 ./mvnw
@@ -10,6 +11,7 @@ host locally
 build docker image
 
 ./mvnw spring-boot:build-image
+./mvnw -Pprod spring-boot:build-image
 
 +++
 deploy the image and expose the service
@@ -23,6 +25,7 @@ test
 minikube service my-app-ws
 
 ---
+
 clean-up
 
 kubectl delete svc my-app-ws
