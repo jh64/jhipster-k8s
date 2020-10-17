@@ -33,9 +33,9 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://192.168.2.40:30432/postgresdb
-    username: postgresadmin
-    password: admin123
+    url: jdbc:postgresql://localhost:5432/myAppWs
+    username: myAppWs
+    password: myAppWs
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -47,7 +47,7 @@ spring:
     contexts: prod
     enabled: false
   mail:
-    host: 192.168.2.40
+    host: localhost
     port: 25
     username:
     password:
@@ -116,7 +116,7 @@ jhipster:
     use-json-format: false # By default, logs are not in Json format
     logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
       enabled: false
-      host: 192.168.2.40
+      host: localhost
       port: 5000
       queue-size: 512
   audit-events:
