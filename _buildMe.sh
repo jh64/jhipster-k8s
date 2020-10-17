@@ -1,4 +1,8 @@
 echo ++++++++++++++++++++++++++++++++++++++
+sudo rm -r -f ./target
+#read -p "Press Enter to continue..."
+
+echo ++++++++++++++++++++++++++++++++++++++
 docker rmi my-app-ws:0.0.1-SNAPSHOT --force
 docker image ls
 #read -p "Press Enter to continue..."
