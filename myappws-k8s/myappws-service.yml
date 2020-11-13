@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myappws
+  namespace: jd-n1
+  labels:
+    app: myappws
+spec:
+  selector:
+    app: myappws
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080

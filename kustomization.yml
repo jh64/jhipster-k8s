@@ -1,0 +1,15 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+namespace: jd-n1
+
+resources:
+  - namespace.yml
+  # Individual apps
+  - myappws-k8s/myappws-deployment.yml
+  - myappws-k8s/myappws-service.yml
+  - myappws-k8s/myappws-postgresql.yml
+  - myappws-k8s/jwt-secret.yml
+# service discovery eureka/consul
+
+patchesJson6902:
