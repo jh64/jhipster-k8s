@@ -3,4 +3,4 @@ Postgres for prod), with the entity blog.jdl from https://github.com/mraible/jhi
 
 Running the build scripts _buildMe.????.sh will push the image to the local Docker registry.
 
-Kubernetes deployment configuration yaml files are in another github project: https://github.com/jh64/config.k8s
+Kubernetes deployment configuration yaml files are in another github project: https://github.com/jh64/jhipster-k8s.config
